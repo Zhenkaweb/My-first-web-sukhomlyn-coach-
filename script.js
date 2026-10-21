@@ -1,7 +1,7 @@
 "use strict";
 
 /* ==========================================================
-   МОВА САЙТУ: українська (за замовчуванням) ↔ російська
+   МОВА САЙТУ: українська (за замовчуванням) ↔ російська ↔ англійська
    Словник: ключ — український текст зі сторінки, значення —
    російський переклад. Щоб змінити переклад — правь значення нижче.
 ========================================================== */
@@ -141,7 +141,161 @@ const I18N_RU = {
     "Я пояснюю, що ми робимо і навіщо. Щоб з часом ти сам розумів, як тренуватися, харчуватися та підтримувати форму.": "Я объясняю, что мы делаем и зачем. Чтобы со временем ты сам понимал, как тренироваться, питаться и поддерживать форму."
 };
 
+const I18N_EN = {
+    "Про мене": "About me",
+    "Послуги": "Services",
+    "Результати": "Results",
+    "Контакти": "Contact",
+    "ТРАНСФОРМАЦІЙ": "RESULTS",
+    "РОКІВ ТРЕНЕРСЬКОГО ДОСВІДУ": "YEARS OF EXPERIENCE",
+    "РОКІВ У СПОРТІ": "YEARS IN SPORT",
+    "Побудуй тіло,": "Build the body,",
+    "яким": "you'll be",
+    "будеш пишатися": "proud of",
+    "Онлайн ведення 1 на 1": "Online 1-on-1 coaching",
+    "Твій персональний план тренувань, харчування та постійний зворотний зв'язок, щоб системно прийти до бажаної форми": "Your personal training plan, nutrition and constant feedback to systematically reach the shape you want",
+    "Записатися": "Sign up",
+    "Індивідуальний план": "Individual plan",
+    "Харчування": "Nutrition",
+    "Зворотний зв'язок": "Feedback",
+    "МОЯ ІСТОРІЯ": "MY STORY",
+    "Я теж колись": "I once",
+    "починав з нуля": "started from zero",
+    "ДО": "BEFORE",
+    "ПІСЛЯ": "AFTER",
+    "років": "years",
+    "Починаю займатися боротьбою": "I start practicing wrestling",
+    "Розумію, що просто тренуватися, як усі, недостатньо. Додаю силові, працюю над харчуванням": "I realize that just training like everyone else isn't enough. I add strength training and work on my nutrition",
+    "Глибше вивчаю тренування та харчування, проходжу навчання, працюю з тренерами, експериментую на собі": "I study training and nutrition in depth, take courses, work with coaches and experiment on myself",
+    "рік": "year",
+    "Змінююся з 65 до 73 кг, зберігши хорошу форму": "I go from 65 to 73 kg while staying in good shape",
+    "Сьогодні": "Today",
+    "Розвиваюся далі: силові тренування, єдиноборства, біг і функціональний тренінг": "I keep growing: strength training, combat sports, running and functional training",
+    "Результат — це не генетика чи випадковість, а система і розуміння того, що ти робиш.": "A result isn't genetics or luck. It's a system and an understanding of what you're doing.",
+    "Я пройшов цей шлях сам.": "I walked this path myself.",
+    "Тепер допомагаю пройти його тобі.": "Now I help you walk it.",
+    "Читати повну історію": "Read the full story",
+    "З 10 років я займався боротьбою.": "I did wrestling from the age of 10.",
+    "У 13 зрозумів, що просто тренуватися, як усі, недостатньо.": "At 13 I realized that just training like everyone else isn't enough.",
+    "Я був маленьким і худим хлопцем та хотів змінити своє тіло.": "I was a small, skinny kid who wanted to change my body.",
+    "Почав додавати силові тренування, працювати над харчуванням і шукати те, що справді працює.": "I started adding strength training, working on my nutrition and looking for what really works.",
+    "У 18 років я почав глибше вивчати тренування та харчування, проходив навчання, працював із тренерами, експериментував на собі й робив багато помилок.": "At 18 I began studying training and nutrition in depth, took courses, worked with coaches, experimented on myself and made a lot of mistakes.",
+    "За рік я змінився з 65 до 73 кг, зберігши хорошу форму.": "Within a year I went from 65 to 73 kg while staying in good shape.",
+    "Цей досвід навчив мене головного: результат — це не генетика чи випадковість, а система і розуміння того, що ти робиш.": "That experience taught me the main thing: a result isn't genetics or luck, it's a system and an understanding of what you're doing.",
+    "Сьогодні я продовжую розвиватися сам і поєдную силові тренування з єдиноборствами, бігом та функціональним тренінгом.": "Today I keep developing myself, combining strength training with combat sports, running and functional training.",
+    "Для мене сильне тіло — це не тільки м'язи.": "For me, a strong body isn't just muscles.",
+    "Воно має бути сильним, здоровим, витривалим та енергійним.": "It has to be strong, healthy, resilient and energetic.",
+    "Саме цю систему я передаю своїм підопічним, щоб вони не просто отримали результат, а навчилися керувати своїм тілом самостійно.": "This is the system I pass on to my clients, so they don't just get a result but learn to manage their own body on their own.",
+    "Я не просто допоможу тобі змінити тіло. Я навчу тебе розуміти, як його змінювати": "I won't just help you change your body. I'll teach you to understand how to change it",
+    "років у спорті": "years in sport",
+    "клієнтів та трансформацій": "clients and transformations",
+    "роки тренерства, освіта бакалавр ФКіС": "years of coaching, Bachelor's degree in Physical Education and Sports",
+    "Готовий змінити своє тіло?": "Ready to change your body?",
+    "Почати свою трансформацію": "Start your transformation",
+    "ПРО МЕНЕ": "ABOUT ME",
+    "Чому мені": "Why people",
+    "довіряють": "trust me",
+    "Чому я?": "Why me?",
+    "Без крайнощів": "No extremes",
+    "Постійна підтримка": "Constant support",
+    "Тренування, які підходять тобі": "Training that fits you",
+    "Розумієш, що робиш": "You understand what you're doing",
+    "ПОСЛУГИ": "SERVICES",
+    "Обери свій": "Choose your",
+    "формат": "format",
+    "Тренування та супровід під твої цілі, рівень підготовки та спосіб життя.": "Training and coaching tailored to your goals, fitness level and lifestyle.",
+    "Онлайн": "Online",
+    "ведення 1 на 1": "1-on-1 coaching",
+    "Повний супровід до твоєї зміни": "Full support throughout your transformation",
+    "/ місяць": "/ month",
+    "План тренувань": "Training plan",
+    "Контроль прогресу": "Progress tracking",
+    "Постійний зв'язок": "Constant contact",
+    "Що входить": "What's included",
+    "Стартова консультація — 1 година, персональна програма тренувань 2–4 рази на тиждень, відео з поясненням техніки вправ, повний супровід харчування, розрахунок БЖВ та рекомендації щодо відновлення.": "Starting consultation — 1 hour, a personal training program 2–4 times a week, exercise technique videos, full nutrition support, macro calculation and recovery recommendations.",
+    "Ти надсилаєш звіти й відео виконання вправ, я перевіряю техніку, аналізую прогрес і коригую програму.": "You send reports and exercise videos, I check your technique, analyze your progress and adjust the program.",
+    "ПРАГА": "PRAGUE",
+    "Персональні та парні": "Personal and partner",
+    "тренування": "training",
+    "Тренування під твою ціль": "Training for your goal",
+    "Індивідуальні та парні тренування в залі з повним супроводом під твою ціль.": "Individual and partner gym training with full support for your goal.",
+    "Персональна програма": "Personal program",
+    "Харчування та БЖВ": "Nutrition and macros",
+    "Контроль і підтримка": "Tracking and support",
+    "Враховую твою ціль, рівень підготовки та спосіб життя. Разом працюємо над тренуваннями, харчуванням і прогресом, а я відповідаю на питання та пояснюю, що і навіщо ми робимо.": "I take into account your goal, fitness level and lifestyle. Together we work on training, nutrition and progress, and I answer your questions and explain what we do and why.",
+    "Функціональні": "Functional",
+    "групи": "groups",
+    "Тренуйся в команді, розвивай своє тіло": "Train as a team, develop your body",
+    "Функціональні тренування в центрі Праги для чоловіків і жінок. Кругова методика, силові вправи та робота на витривалість — тренуєш усе тіло за одне тренування.": "Functional training in the center of Prague for men and women. Circuit method, strength exercises and endurance work — you train your whole body in one session.",
+    "Сила та витривалість": "Strength and endurance",
+    "Схуднення та набір м'язів": "Weight loss and muscle gain",
+    "Сильне ком'юніті": "Strong community",
+    "Тренуємось разом, підтримуємо одне одного та стаємо кращими.": "We train together, support each other and become better.",
+    "Приєднуйся до нашої команди": "Join our team",
+    "РЕЗУЛЬТАТИ КЛІЄНТІВ": "CLIENT RESULTS",
+    "Результат говорить": "The result speaks",
+    "сам за себе": "for itself",
+    "Реальні люди. Реальна робота. Реальні зміни.": "Real people. Real work. Real change.",
+    "Хочу такий результат": "I want this result",
+    "Часті": "Frequently asked",
+    "запитання": "questions",
+    "Відповіді на найпоширеніші питання про тренування та співпрацю.": "Answers to the most common questions about training and working together.",
+    "Чи підійде онлайн-ведення, якщо я новачок?": "Is online coaching suitable if I'm a beginner?",
+    "Так. Тобі не потрібно мати великий досвід у тренажерному залі. Програма підбирається під твій рівень, а техніку вправ я детально пояснюю у відео. Ти також можеш надсилати мені відео виконання вправ, щоб я міг виправити помилки та допомогти тобі прогресувати безпечно.": "Yes. You don't need much gym experience. The program is built for your level, and I explain exercise technique in detail in videos. You can also send me videos of your exercises so I can correct mistakes and help you progress safely.",
+    "Чи потрібен тренажерний зал для тренувань?": "Do I need a gym to train?",
+    "Не обов'язково. Програма складається відповідно до обладнання, яке тобі доступне. Це може бути повноцінний тренажерний зал, домашні тренування або мінімальний набір обладнання.": "Not necessarily. The program is built around the equipment available to you. It can be a full gym, home workouts or a minimal set of equipment.",
+    "Чи зможемо ми працювати, якщо я не маю фіксованого графіка?": "Can we work together if I don't have a fixed schedule?",
+    "Так. Онлайн-формат дозволяє адаптувати тренування під твій реальний графік. Головне — виконувати запланований обсяг роботи та повідомляти мені, якщо обставини змінюються. За необхідності ми коригуємо план.": "Yes. The online format lets us adapt training to your real schedule. The main thing is to do the planned amount of work and tell me if circumstances change. If necessary, we adjust the plan.",
+    "Що буде, якщо я пропущу тренування або не зможу виконати план?": "What happens if I miss a workout or can't follow the plan?",
+    "Нічого критичного. Моє завдання — не сварити тебе за пропущене тренування, а допомогти адаптувати процес. Ти повідомляєш мені, що сталося, і ми вирішуємо, як краще продовжити, щоб не втрачати прогрес.": "Nothing critical. My job isn't to scold you for a missed workout, but to help adapt the process. You tell me what happened and we decide how best to continue so you don't lose progress.",
+    "Коли я побачу перші результати?": "When will I see the first results?",
+    "Це залежить від твоєї цілі, стартової точки, харчування, тренувань та дотримання рекомендацій. Я не обіцяю однаковий результат за конкретну кількість тижнів для всіх. Моє завдання — побудувати систему, контролювати твій прогрес і коригувати її в процесі.": "It depends on your goal, starting point, nutrition, training and how closely you follow the recommendations. I don't promise the same result in a set number of weeks for everyone. My job is to build a system, monitor your progress and adjust it along the way.",
+    "Чи підійде онлайн-ведення, якщо я вже тренуюся, але не бачу прогресу?": "Is online coaching suitable if I already train but don't see progress?",
+    "Так. Часто проблема не в тому, що людина мало тренується, а в тому, що немає чіткої системи та контролю прогресу. Я аналізую твої тренування, техніку, навантаження, харчування та відновлення і допомагаю визначити, що потрібно змінити.": "Yes. Often the problem isn't that a person trains too little, but that there is no clear system and progress tracking. I analyze your training, technique, load, nutrition and recovery and help determine what needs to change.",
+    "ГОТОВИЙ ДО ЗМІН?": "READY FOR CHANGE?",
+    "Твій результат": "Your result",
+    "починається сьогодні": "starts today",
+    "Не відкладай зміни на потім. Залиш заявку — і почнемо працювати над твоїм результатом.": "Don't put change off. Leave a request and we'll start working on your result.",
+    "Записатися на тренування": "Book a training session",
+    "АБО НАПИШИ МЕНІ": "OR MESSAGE ME",
+    "Обери зручний спосіб зв'язку": "Choose a convenient way to get in touch",
+    "Слідкуй за контентом": "Follow the content",
+    "Написати напряму": "Message directly",
+    "Дивись тренування": "Watch workouts",
+    "Нагору": "Back to top",
+    "Відкрити меню": "Open menu",
+    "Станіслав до трансформації": "Stanislav before the transformation",
+    "Станіслав після трансформації": "Stanislav after the transformation",
+    "Порівняти фото до і після": "Compare before and after photos",
+    "Кейси клієнтів": "Client cases",
+    "Результат клієнта після": "Client result after",
+    "Результат клієнта до": "Client result before",
+    "Sukhomlyn Coach — персональні тренування в Празі, онлайн ведення та функціональні групові тренування.": "Sukhomlyn Coach — personal training in Prague, online coaching and functional group training.",
+    "Я сам пройшов шлях від худого хлопця до форми, яку хотів. Тому знаю не тільки теорію, а й те, з чим ти можеш зіткнутися по дорозі.": "I went from a skinny kid to the shape I wanted myself. So I know not only the theory, but also what you may run into along the way.",
+    "Без голодувань, виснажливих тренувань і швидких рішень. Працюємо так, щоб результат можна було зберегти надовго.": "No starvation, exhausting workouts or quick fixes. We work so that the result can be kept for the long term.",
+    "Я завжди на зв'язку. Якщо щось не виходить, є питання або потрібно щось змінити — розбираємося разом.": "I'm always in touch. If something isn't working, you have questions or something needs to change — we figure it out together.",
+    "Враховуємо твою ціль, графік, рівень підготовки та спосіб життя. Підбираємо те, що реально працює саме для тебе.": "We take into account your goal, schedule, fitness level and lifestyle. We choose what really works for you.",
+    "Я пояснюю, що ми робимо і навіщо. Щоб з часом ти сам розумів, як тренуватися, харчуватися та підтримувати форму.": "I explain what we're doing and why. So that over time you understand for yourself how to train, eat and stay in shape.",
+    "Кейс 1": "Case 1",
+    "Кейс 2": "Case 2",
+    "Кейс 3": "Case 3",
+    "Кейс 4": "Case 4",
+    "Кейс 5": "Case 5",
+    "Кейс 6": "Case 6",
+    "Кейс 7": "Case 7",
+    "Кейс 8": "Case 8",
+    "Кейс 9": "Case 9",
+    "Кейс 10": "Case 10"
+};
+
 let siteLanguage = "uk";
+
+/* Поточний словник: ru / en (для української повертає null — текст як є) */
+function currentDict() {
+    if (siteLanguage === "ru") return I18N_RU;
+    if (siteLanguage === "en") return I18N_EN;
+    return null;
+}
 
 function i18nKey(text) {
     return String(text).replace(/\s+/g, " ").trim();
@@ -149,9 +303,11 @@ function i18nKey(text) {
 
 /* Переклад окремого рядка (для текстів, які створює JS) */
 function tr(text) {
-    if (siteLanguage !== "ru") return text;
+    const dict = currentDict();
 
-    const translated = I18N_RU[i18nKey(text)];
+    if (!dict) return text;
+
+    const translated = dict[i18nKey(text)];
 
     return translated !== undefined ? translated : text;
 }
@@ -161,7 +317,7 @@ let i18nDescriptionOriginal = null;
 
 function applyLanguage(language) {
 
-    siteLanguage = language === "ru" ? "ru" : "uk";
+    siteLanguage = (language === "ru" || language === "en") ? language : "uk";
 
     /* --- всі текстові вузли --- */
 
@@ -189,6 +345,8 @@ function applyLanguage(language) {
 
     while ((current = walker.nextNode())) nodes.push(current);
 
+    const dict = currentDict();
+
     nodes.forEach((node) => {
 
         if (!i18nOriginals.has(node)) {
@@ -197,8 +355,8 @@ function applyLanguage(language) {
 
         const original = i18nOriginals.get(node);
 
-        if (siteLanguage === "ru") {
-            const translated = I18N_RU[i18nKey(original)];
+        if (dict) {
+            const translated = dict[i18nKey(original)];
 
             if (translated !== undefined) {
                 const lead = original.match(/^\s*/)[0];
@@ -228,11 +386,11 @@ function applyLanguage(language) {
                 }
 
                 const original = element.getAttribute(saved);
-                const translated = I18N_RU[i18nKey(original)];
+                const translated = dict ? dict[i18nKey(original)] : undefined;
 
                 element.setAttribute(
                     attribute,
-                    siteLanguage === "ru" && translated !== undefined
+                    translated !== undefined
                         ? translated
                         : original
                 );
@@ -325,8 +483,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let savedLanguage = "uk";
 
     try {
-        savedLanguage =
-            localStorage.getItem("siteLanguage") === "ru" ? "ru" : "uk";
+        const stored = localStorage.getItem("siteLanguage");
+
+        savedLanguage = (stored === "ru" || stored === "en") ? stored : "uk";
     } catch (e) { /* не критично */ }
 
     applyLanguage(savedLanguage);
